@@ -7,4 +7,3 @@ List of TODOs for Hempl
 * Interrupts from within Hempl
 * Update documentation
 * User examples
-* Add XMC specific code into Hempl (support for XMC4500)
