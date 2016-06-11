@@ -25,6 +25,8 @@
 #define PC_MUL 32
 #elif defined ALCOR_BOARD_MIZAR32
 #define PC_MUL 1024
+#elif defined ALCOR_BOARD_HEXAGON
+# define PC_MUL 64
 #else
 #error "Unknown board/CPU. PC_MUL not defined."
 #endif

@@ -95,6 +95,9 @@ platform_list = {
   'stm32' : { 'cpus' : [ 'STM32F103ZE', 'STM32F103RE' ],
               'toolchains' : [ 'arm-gcc', 'codesourcery', 'devkitarm', 'arm-eabi-gcc' ],
               'big_endian': False },
+  'xmc4000' : { 'cpus' : [ 'XMC4500F144K1024' ],
+                'toolchains' : [ 'arm-gcc', 'codesourcery', 'devkitarm', 'arm-eabi-gcc' ],
+                'big_endian' : False },
   'avr32' : { 'cpus' : [ 'AT32UC3A0512', 'AT32UC3A0256', 'AT32UC3A0128', 'AT32UC3B0256' ],
               'toolchains' : [ 'avr32-gcc', 'avr32-unknown-none-gcc' ],
               'big_endian': True },
@@ -105,7 +108,8 @@ board_list = { 'STM3210E-EVAL' : [ 'STM32F103ZE' ],
                'ATEVK1100' : [ 'AT32UC3A0512' ],
                'ATEVK1101' : [ 'AT32UC3B0256' ],
                'ET-STM32' : [ 'STM32F103RE' ],
-               'MIZAR32' : [ 'AT32UC3A0256', 'AT32UC3A0512', 'AT32UC3A0128' ]
+               'MIZAR32' : [ 'AT32UC3A0256', 'AT32UC3A0512', 'AT32UC3A0128' ],
+               'HEXAGON': [ 'XMC4500F144K1024' ]
             }
 
 cpu_list = sum([board_list[i] for i in board_list],[])
